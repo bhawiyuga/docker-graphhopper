@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  graphhopper:
+    build: .
+    image: bhawiyuga/graphhopper
+    container_name: graphhopper
+    ports:
+      - 8989:8989
+    volumes:
+      - ./data:/data
